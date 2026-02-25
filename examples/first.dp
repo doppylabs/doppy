@@ -1,0 +1,9 @@
+dataset "example" {
+  source: "example.csv"
+  min_quality: 0.9
+}
+
+model "example_model" {
+  base: "qwen-7b"
+  train_on: "example"
+}
